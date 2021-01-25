@@ -2,9 +2,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="5dp">
+    android:layout_margin="5dp"
+    android:background="#FFFFFF"
+    android:elevation="10dp">
 
     <ImageView
         android:id="@+id/ivProfileImage"
@@ -14,6 +17,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
+        android:elevation="5dp"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -21,19 +25,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="7dp"
         android:layout_marginTop="0dp"
         android:layout_toEndOf="@+id/ivProfileImage"
-        android:text="username123" />
+        android:fontFamily="sans-serif-medium"
+        android:text="username123"
+        android:textColor="#070707"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tvBody"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvScreenName"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="7dp"
         android:layout_marginTop="2dp"
         android:layout_toEndOf="@+id/ivProfileImage"
-        android:text="This is my tweet :)" />
+        android:autoLink="all"
+        android:fontFamily="sans-serif-light"
+        android:linksClickable="true"
+        android:shadowColor="#FFFFFF"
+        android:text="This is my tweet :)"
+        android:textColor="#636363" />
 
 </RelativeLayout>

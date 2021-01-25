@@ -30,6 +30,7 @@ public class TwitterApp extends Application {
 
         // use chrome://inspect to inspect your SQL database
         Stetho.initializeWithDefaults(this);
+
     }
 
     public static TwitterClient getRestClient(Context context) {
